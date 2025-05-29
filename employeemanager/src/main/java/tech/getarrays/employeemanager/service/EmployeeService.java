@@ -1,11 +1,13 @@
 package tech.getarrays.employeemanager.service;
 
+import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import tech.getarrays.employeemanager.exception.UserNotFoundException;
 import tech.getarrays.employeemanager.model.Employee;
 import tech.getarrays.employeemanager.repo.EmployeeRepo;
 
@@ -32,8 +34,10 @@ public class EmployeeService {
         return employeeRepo.save(employee);
     }
 
-    public Employee findEmployeeById(Long id){
-        return employeeRepo.findEmployeeById(id);
+    // Tutorial has UserNotFoundException listed, I think it is just a version diff
+    public Employee findEmployeeById(Long id) throws UserNotFoundException{
+        return employeeRepo.findEmployeeById(id)
+            .orElseThrow(() -> new UserNotFoundException("User by id " + id + " was not found"));
     }
 
     public void deleteEmployee(Long id){

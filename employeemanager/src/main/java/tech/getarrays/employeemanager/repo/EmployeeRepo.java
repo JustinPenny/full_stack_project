@@ -1,5 +1,7 @@
 package tech.getarrays.employeemanager.repo;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import tech.getarrays.employeemanager.model.Employee;
 
@@ -10,6 +12,6 @@ public interface EmployeeRepo extends JpaRepository<Employee, Long>{
     // Look up JPA Query Method creation for more info
     void deleteEmployeeById(Long id);
 
-    Employee findEmployeeById(Long id);
+    Optional<Employee> findEmployeeById(Long id);
 
 }
