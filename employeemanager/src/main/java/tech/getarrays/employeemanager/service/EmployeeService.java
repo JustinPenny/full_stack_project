@@ -1,6 +1,5 @@
 package tech.getarrays.employeemanager.service;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.UUID;
 
