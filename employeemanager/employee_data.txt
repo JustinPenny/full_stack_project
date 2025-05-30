@@ -1,0 +1,31 @@
+{
+    "email": "something1@getarrayproject.com",
+    "imageUrl":"https://bootdey.com/img/Content/avatar/avatar1.png",
+    "jobTitle": "JavaScript",
+    "name": "Daniel Craig",
+    "phone": "7894561233"
+}
+{
+    "email": "something2@getarrayproject.com",
+    "imageUrl":"https://bootdey.com/img/Content/avatar/avatar2.png",
+    "jobTitle": "Java",
+    "name": "Samantha Keebler",
+    "phone": "3216549877"
+}
+{
+    "email": "something3@getarrayproject.com",
+    "imageUrl":"https://bootdey.com/img/Content/avatar/avatar3.png",
+    "jobTitle": "BA",
+    "name": "Paul Cat",
+    "phone": "7412589636"
+}
+{
+    "email": "something4@getarrayproject.com",
+    "imageUrl":"https://bootdey.com/img/Content/avatar/avatar4.png",
+    "jobTitle": "Stuff",
+    "name": "Damon Cranky",
+    "phone": "9518476325"
+}
+
+// Using postman you can perform a POST to http://localhost:8080/employee/add with the above data to create employees.
+// The employeeCode will be generated for us by the application
