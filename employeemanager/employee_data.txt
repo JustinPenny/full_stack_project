@@ -28,4 +28,5 @@
 }
 
 // Using postman you can perform a POST to http://localhost:8080/employee/add with the above data to create employees.
+// The json data must be posted in the body of the post request
 // The employeeCode will be generated for us by the application

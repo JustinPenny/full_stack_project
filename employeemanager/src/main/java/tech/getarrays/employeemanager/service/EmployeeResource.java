@@ -31,7 +31,8 @@ public class EmployeeResource {
 
     // Find all employees
     @GetMapping("/all")
-    // Double generic so we have to define list and what's in the list
+    // Using an API client like postman you can send a simple GET request to hit this endpoint:
+    // http://localhost:8080/employee/all
     public ResponseEntity<List<Employee>> getAllEmployee (){
         List<Employee> employee = employeeService.findAllEmployees();
         return new ResponseEntity<>(employee, HttpStatus.OK);
