@@ -17,6 +17,7 @@ export class App implements OnInit {
 
   constructor(private employeeService: EmployeeService) { }
 
+  // Runs on initialization
   ngOnInit(){
     this.getEmployees();
   }
